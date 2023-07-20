@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&family=Oswald:wght@600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  max-width: 750px;
+  background-color: #cea419;
+  height: 100vh;
+  position: relative;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+span {
+  margin-left: auto;
+}
+ul {
+  list-style: none;
+  width: 100%;
+  max-width: 450px;
+}
+li {
+  display: flex;
+  position: relative;
+  left: 5%;
+  font-weight: 400;
+}
+span {
+  position: relative;
+  right: 15%;
+}
+
+.menu p {
+  font-weight: 300;
+  font-size: small;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-container {
+  width: 75%;
+}
+.bira-resmi {
+  background-image: url(./img/Bira.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.scallop-down {
+  height: 100px;
+  width: 100%;
+  background: -webkit-gradient(
+    radial,
+    50% 10,
+    26,
+    50% 0,
+    40,
+    from(#cea419),
+    color-stop(0.7, black),
+    color-stop(0.5, #cea419),
+    to(#cea419)
+  );
+  background-size: 50px 100%;
+}
+footer {
+  background-color: #cea419;
+  position: absolute;
+  width: 75%;
+  max-width: 750px;
+  bottom: 20px;
+  display: flex;
+  
+  gap: 5px;
+  justify-content: center;
+
+  z-index: 5;
+}
+footer img {
+  width: 120px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+footer a:hover{
+    transform: scale(1.1);
+}
